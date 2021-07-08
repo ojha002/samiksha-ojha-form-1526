@@ -1,7 +1,7 @@
 
 
 // Access input value
-let fm = document.getElementById('contact');
+let fm = document.getElementById('contact-form');
 let fn = document.getElementById('fname');
 let me = document.getElementById('details');
 let em = document.getElementById('email');
