@@ -1,0 +1,285 @@
+                 /*
+Color scheme
+        Grey = #DDD
+        white =#F5F5F5
+        blue=#6495ED
+*/
+ 
+ /*Google fonts*/
+/* font-family: 'Arial, Helvetica, Helvetica Neue, sans-serif; */
+
+
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  } 
+/* General */
+body {
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: #575757;
+    font-size: 1rem;
+}
+
+/*header*/
+
+header {
+    padding-top: 2.8rem;
+    position: relative;
+}
+header section {
+    background: #ddd;
+    padding: 1rem;
+}
+
+main {
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 50rem;
+}
+/*1.1 Navigation*/
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 99;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1.2rem;
+    background-color: #F5F5F5;
+}
+nav ul li {
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+nav ul li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #6495ED;
+    border-bottom: 2px solid #DDD;
+    width: 2rem;
+}
+nav ul li a:hover {
+    background-color: #6495ED;
+    color: white;
+    cursor: pointer;
+}
+nav ul li a:last-of-type {
+    margin-right: 0;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px #DDD;
+    padding: 0.5rem;
+}
+#hamburger-menu {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    color: #6495ED;
+}
+
+/*navigation*/
+
+/* footer */
+
+.footer-container{
+    position: relative;
+}
+.footer-item2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #D0CED1;
+    position: absolute;
+    bottom: -25rem;
+    width: 100%;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  footer{
+    background-color: dimgrey;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    height: 32rem;
+}
+.copyright p{
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: #F5F5F5;
+    width: 100%;
+    margin: 0;
+    color: #888789;  
+}
+
+/***************************************/
+/*footer social icons*/
+.social ul{
+    list-style-type: none;
+    position: absolute;
+    left:-1.6rem;
+    bottom:-31rem;
+  }
+  .social ul li{
+      float: left;
+      padding: 1.5rem;
+  }
+  .social ul li a{
+      color: white;   
+  }
+  .social ul li a:hover{
+      color: darkgrey;    
+  }
+/* Contact Page  */
+/* * Box */ 
+.box {
+    display: block;
+    width: 15rem;
+    height: 4rem;
+    color: #575757;
+    border-style: solid;
+    box-shadow: 3px 3px dimgrey;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.container {
+    border: 1px solid gray;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+/* forms */
+form {
+    box-sizing: border-box;
+    background-color: lightgrey;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+label {
+    font-weight: bold;
+    color: #575757;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input:focus {
+    border: 0.20rem solid #013552;
+    /* background-color: lightblue; */
+}
+
+
+input[type="submit"] {
+    background-color: #6495ED;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-decoration: none;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #6495ED;
+  }
+
+/***************************************************
+Tablet - between 25rem and 40rem
+***************************************************/
+
+@media only screen and (min-width: 25rem) {
+    /* CSS HERE */
+
+    nav {
+        display: block;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    p,
+    li,
+    label,
+    input,
+    textarea {
+        font-size: 1.2rem;
+    }
+    .contact {
+        max-width: 100%;
+    }
+   
+}
+/***************************************************
+Desktop - between 40rem and 50rem
+***************************************************/
+
+@media only screen and (min-width: 40rem) {
+    nav {
+        display: block;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    p,
+    li,
+    label,
+    input,
+    textarea {
+        font-size: 1.2rem;
+    }
+
+    .contact {
+        max-width: 100%;
+    }
+}
+
+/***************************************************
+Desktop - 50rem
+***************************************************/
+
+@media only screen and (max-width: 50rem) {
+    nav {
+        display: block;
+    }
+    #hamburger-menu {
+        display: none;
+    }
+    p,
+    li,
+    label,
+    input,
+    textarea {
+        font-size: 1.2rem;
+    }
+
+}
