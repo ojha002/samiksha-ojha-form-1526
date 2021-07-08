@@ -37,23 +37,7 @@ function formValidator(ev) {
     }
     // check if error array is empty. If so, print in console data object,
     // otherwise print in console errors array 
-        // Trim the whitespace
-    em.value = em.value.trim();
-    // Get the value or write out the error message.
-    if (em.value !==''){
-        console.log(`User email is: ${em.value}`);
-    }
-    else{
-        console.log(`User email is empty`);
-    }
-
-}
-
-fm.addEventListener('submit', formValidator);
-
-fm.addEventListener('submit', function (e) {
     // prevent the form submission ----- do the validation
-    e.preventDefault();
 
     // Trim the whitespace
     em.value = em.value.trim();
@@ -67,4 +51,8 @@ fm.addEventListener('submit', function (e) {
     } else{
         console.log(`User email is empty`);
     }
-});
+
+}
+
+fm.addEventListener('submit', formValidator);
+
