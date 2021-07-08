@@ -281,5 +281,8 @@ Desktop - 50rem
     textarea {
         font-size: 1.2rem;
     }
+  .contact {
+        max-width: 100%;
+    }
 
 }
